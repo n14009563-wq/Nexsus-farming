@@ -1,0 +1,20 @@
+name: NexusFarming
+version: ${project.version}
+main: com.nexuscraft.nexusfarming.NexusFarmingPlugin
+api-version: '1.21'
+author: Nexus Universe
+description: A massive vanilla-only farming overhaul. Golden hoe in hand: crops auto-replant the instant you harvest them, with a rolled chance of bonus yield, sneak-harvest reaps a whole field at once, off-tempo crops nudge forward a growth stage, worked soil builds up Fertility over time for even better odds, rare Golden Crops drop with a real buff when eaten, and a pumpkin-on-hay Scarecrow protects nearby crops from getting trampled.
+
+commands:
+  nexusfarming:
+    description: Check your farming stats, or reload config.
+    aliases: [nfarm, farming]
+    usage: /nexusfarming <status|reload>
+
+permissions:
+  nexusfarming.admin:
+    description: Reload config.
+    default: op
+  nexusfarming.use:
+    description: Use the golden hoe's farming powers.
+    default: true
